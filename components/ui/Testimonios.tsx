@@ -1,11 +1,15 @@
 const testimonios = [
   {
-    nombre: "Laura M.",
-    texto: "Gracias a Pelvicenter recuperé mi confianza y mejoré mi calidad de vida.",
+    nombre: "Maria Fernanda Peña",
+    texto: "Estar embarazada es una etapa hermosa, pero también desafiante. En este centro encontré el apoyo y el cuidado que mi cuerpo necesita. Cada sesión me hace sentir relajada y feliz de contar con tan buen@s profesionales. ¡Mil gracias!",
   },
   {
-    nombre: "José R.",
-    texto: "Excelente atención, muy profesionales y dedicados.",
+    nombre: "Amparo Escobar",
+    texto: "La Lic. Muy capacitada profesionalmente. Por mi experiencia a la tercera sesión mi dolencia mejoro un 80%.Me siento feliz y muy cómoda con la atención que me brindan. Recomiendo a todas las personas que si necesitan ayuda en sus procesos de rehabilitación puedan acudir a su consulta  para obtener más información.",
+	},
+  {
+    nombre: "Mauge",
+    texto: "Estoy súper contenta con la atención!!. Me siento muy segura con la licenciada, que es muy correcta y profesional en el trato conmigo!!. Voy avanzando rápido, y muy bien, en mi recuperación!!. Recomiendo Pelvicenter al 100 × 100!!!.",
   },
 ];
 

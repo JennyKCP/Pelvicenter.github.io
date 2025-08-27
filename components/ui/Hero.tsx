@@ -1,22 +1,27 @@
 export default function Hero() {
   return (
-    <section id="inicio" className="pt-24 pb-16 bg-indigo-50">
-      <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-800">
-          Cuidamos tu Salud Pélvica
-        </h2>
-        <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-          En Pelvicenter ofrecemos atención especializada en rehabilitación de suelo pélvico con tecnología avanzada y profesionales expertos.
+    <section className="flex flex-col md:flex-row items-center justify-between gap-8 px-8 py-16 bg-rose-50">
+      <div className="flex-1">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          En Pelvicenter, somos especialistas en fortalecer tu suelo pélvico
+        </h1>
+        <p className="text-lg text-gray-700 mb-6">
+          Recupera el control y disfruta tu día a día sin preocupaciones gracias a nuestra fisioterapia pélvica especializada.
         </p>
-        <div className="mt-6">
-          <a
-            href="#contacto"
-            className="px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700 transition"
-          >
-            Agenda tu cita
-          </a>
-        </div>
+        <a
+          href="#contacto"
+          className="inline-block bg-rose-500 hover:bg-rose-600 text-white font-semibold px-6 py-3 rounded-full transition"
+        >
+          Contáctanos
+        </a>
+      </div>
+      <div className="flex-1">
+        <img
+          src="/assets/Logo.png"
+          alt="Terapia suelo pélvico"
+          className="rounded-2xl shadow-lg w-full"
+        />
       </div>
     </section>
-  );
+  )
 }

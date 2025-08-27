@@ -1,38 +1,44 @@
-import { HeartPulse, ShieldCheck, Users2 } from "lucide-react";
-
-const services = [
-  {
-    icon: <HeartPulse className="w-8 h-8 text-indigo-600" />,
-    title: "Rehabilitación",
-    desc: "Planes personalizados para el suelo pélvico en hombres y mujeres.",
-  },
-  {
-    icon: <ShieldCheck className="w-8 h-8 text-indigo-600" />,
-    title: "Tecnología Avanzada",
-    desc: "Equipos modernos para diagnósticos y tratamientos efectivos.",
-  },
-  {
-    icon: <Users2 className="w-8 h-8 text-indigo-600" />,
-    title: "Atención Integral",
-    desc: "Profesionales capacitados en salud y bienestar pélvico.",
-  },
-];
-
 export default function Servicios() {
+  const services = [
+    {
+    
+      title: "Rehabilitación de Suelo Pélvico",
+      desc: "Fortalecimiento y recuperación de los músculos del suelo pélvico para prevenir o tratar incontinencia urinaria, prolapsos y molestias relacionadas. Especialmente indicado en mujeres postparto o en etapas de menopausia."
+    },
+    {
+
+      title: "Prevención y Tratamiento de Incontinencia Urinaria",
+      desc: "Evaluación y terapias específicas para mujeres que sufren escapes de orina al reír, toser, hacer deporte o durante el día a día. Soluciones discretas y efectivas para mejorar la calidad de vida"
+    },
+    {
+
+      title: "Fisioterapia Postparto",
+      desc: "Acompañamiento y recuperación integral después del embarazo y parto. Incluye ejercicios personalizados, masajes y técnicas para devolver a fuerza, elasticidad y confianza al cuerpo."
+	  },
+	{
+
+      title: "Terapias para Dolores Pélvicos y Lumbares",
+      desc: "Tratamiento de dolores crónicos en la zona pélvica, abdominal o lumbar relacionados con alteraciones musculares, posturales o del suelo pélvico."
+    },
+	{
+
+      title: "Fisioterapia en Embarazo",
+      desc: "Preparación del cuerpo para el parto a través de ejercicios de elasticidad, respiración y fortalecimiento del suelo pélvico, reduciendo dolores de espalda y molestias durante el embarazo."
+    }
+  ]
+
   return (
-    <section id="servicios" className="py-16 bg-white">
-      <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold text-gray-800">Nuestros Servicios</h2>
-        <div className="mt-10 grid md:grid-cols-3 gap-8">
-          {services.map((s, i) => (
-            <div key={i} className="p-6 bg-indigo-50 rounded-xl shadow hover:shadow-lg transition">
-              <div className="flex justify-center mb-4">{s.icon}</div>
-              <h3 className="text-xl font-semibold text-gray-800">{s.title}</h3>
-              <p className="mt-2 text-gray-600">{s.desc}</p>
-            </div>
-          ))}
-        </div>
+    <section id="servicios" className="px-8 py-16 bg-white text-center">
+      <h2 className="text-2xl font-bold text-gray-900 mb-10">Nuestros servicios</h2>
+      <div className="grid gap-8 md:grid-cols-3">
+        {services.map((s, i) => (
+          <div key={i} className="bg-rose-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+           
+            <h3 className="font-semibold text-lg text-gray-900 mb-2">{s.title}</h3>
+            <p className="text-gray-700">{s.desc}</p>
+          </div>
+        ))}
       </div>
     </section>
-  );
+  )
 }
